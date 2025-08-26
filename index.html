@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Interaktif</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>🔢 Kalkulator Interaktif</h2>
+
+      <div class="input-box">
+        <input type="text" id="angka1" placeholder="Masukkan angka pertama" />
+        <input type="text" id="angka2" placeholder="Masukkan angka kedua" />
+      </div>
+
+      <div class="button-group">
+        <button onclick="hitung('+')">+</button>
+        <button onclick="hitung('-')">-</button>
+        <button onclick="hitung('*')">×</button>
+        <button onclick="hitung('/')">÷</button>
+        <button class="reset" onclick="resetInput()">🔄 Reset</button>
+      </div>
+
+      <div id="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
